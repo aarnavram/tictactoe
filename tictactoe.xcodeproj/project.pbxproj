@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01982771D61CAD800448DE9 /* Amethyst.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A01982761D61CAD800448DE9 /* Amethyst.ttf */; };
 		A022EFC01D611945000CABAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFBF1D611945000CABAC /* AppDelegate.swift */; };
 		A022EFC21D611945000CABAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFC11D611945000CABAC /* ViewController.swift */; };
 		A022EFC51D611945000CABAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022EFC31D611945000CABAC /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A01982761D61CAD800448DE9 /* Amethyst.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amethyst.ttf; sourceTree = "<group>"; };
 		A022EFBC1D611945000CABAC /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A022EFBF1D611945000CABAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A022EFC11D611945000CABAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		A022EFBE1D611945000CABAC /* tictactoe */ = {
 			isa = PBXGroup;
 			children = (
+				A01982761D61CAD800448DE9 /* Amethyst.ttf */,
 				A022EFBF1D611945000CABAC /* AppDelegate.swift */,
 				A022EFC11D611945000CABAC /* ViewController.swift */,
 				A022EFC31D611945000CABAC /* Main.storyboard */,
@@ -232,6 +235,7 @@
 				A022EFCA1D611945000CABAC /* LaunchScreen.storyboard in Resources */,
 				A022EFC71D611945000CABAC /* Assets.xcassets in Resources */,
 				A022EFC51D611945000CABAC /* Main.storyboard in Resources */,
+				A01982771D61CAD800448DE9 /* Amethyst.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +488,7 @@
 				A022EFE61D611945000CABAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A022EFE71D611945000CABAC /* Build configuration list for PBXNativeTarget "tictactoeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				A022EFE91D611945000CABAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A022EFEA1D611945000CABAC /* Build configuration list for PBXNativeTarget "tictactoeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				A022EFEC1D611945000CABAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
