@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25684B78CCB1CF08CD0293CC /* Pods_tictactoeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10CA68638D76528B3D57DBA /* Pods_tictactoeUITests.framework */; };
 		A01982771D61CAD800448DE9 /* Amethyst.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A01982761D61CAD800448DE9 /* Amethyst.ttf */; };
 		A022EFC01D611945000CABAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFBF1D611945000CABAC /* AppDelegate.swift */; };
 		A022EFC21D611945000CABAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFC11D611945000CABAC /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		A022EFCA1D611945000CABAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022EFC81D611945000CABAC /* LaunchScreen.storyboard */; };
 		A022EFD51D611945000CABAC /* tictactoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFD41D611945000CABAC /* tictactoeTests.swift */; };
 		A022EFE01D611945000CABAC /* tictactoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFDF1D611945000CABAC /* tictactoeUITests.swift */; };
+		DFD205294CDBF53346E9C088 /* Pods_tictactoe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C44930D1CA692770AA213A /* Pods_tictactoe.framework */; };
+		F8E675B4746DFFC58D0C5A55 /* Pods_tictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E28F2FAE41664925631D52 /* Pods_tictactoeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C44930D1CA692770AA213A /* Pods_tictactoe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		352A8BA6F0809BCA2181FBBD /* Pods-tictactoe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoe.release.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoe/Pods-tictactoe.release.xcconfig"; sourceTree = "<group>"; };
+		397E1F8EDF5D8833D7C98381 /* Pods-tictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoeTests/Pods-tictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
+		473539B9776F1791D4288094 /* Pods-tictactoeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoeTests/Pods-tictactoeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53E7B6A915EF2F0E2EC3F2D0 /* Pods-tictactoe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoe/Pods-tictactoe.debug.xcconfig"; sourceTree = "<group>"; };
+		57E28F2FAE41664925631D52 /* Pods_tictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9937650B087F6A1863FE99 /* Pods-tictactoeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoeUITests/Pods-tictactoeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A01982761D61CAD800448DE9 /* Amethyst.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amethyst.ttf; sourceTree = "<group>"; };
 		A022EFBC1D611945000CABAC /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A022EFBF1D611945000CABAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		A022EFDB1D611945000CABAC /* tictactoeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tictactoeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A022EFDF1D611945000CABAC /* tictactoeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeUITests.swift; sourceTree = "<group>"; };
 		A022EFE11D611945000CABAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10CA68638D76528B3D57DBA /* Pods_tictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F227121C9674A2346BC1BD9B /* Pods-tictactoeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoeUITests/Pods-tictactoeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD205294CDBF53346E9C088 /* Pods_tictactoe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E675B4746DFFC58D0C5A55 /* Pods_tictactoeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25684B78CCB1CF08CD0293CC /* Pods_tictactoeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B088B0EC8F6B9C352AEE04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00C44930D1CA692770AA213A /* Pods_tictactoe.framework */,
+				57E28F2FAE41664925631D52 /* Pods_tictactoeTests.framework */,
+				E10CA68638D76528B3D57DBA /* Pods_tictactoeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F9F4B357B41E3AA00FE66FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53E7B6A915EF2F0E2EC3F2D0 /* Pods-tictactoe.debug.xcconfig */,
+				352A8BA6F0809BCA2181FBBD /* Pods-tictactoe.release.xcconfig */,
+				473539B9776F1791D4288094 /* Pods-tictactoeTests.debug.xcconfig */,
+				397E1F8EDF5D8833D7C98381 /* Pods-tictactoeTests.release.xcconfig */,
+				9F9937650B087F6A1863FE99 /* Pods-tictactoeUITests.debug.xcconfig */,
+				F227121C9674A2346BC1BD9B /* Pods-tictactoeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A022EFB31D611945000CABAC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				A022EFD31D611945000CABAC /* tictactoeTests */,
 				A022EFDE1D611945000CABAC /* tictactoeUITests */,
 				A022EFBD1D611945000CABAC /* Products */,
+				8F9F4B357B41E3AA00FE66FC /* Pods */,
+				1B088B0EC8F6B9C352AEE04C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A022EFE41D611945000CABAC /* Build configuration list for PBXNativeTarget "tictactoe" */;
 			buildPhases = (
+				B7D5F361C318634F0B5F42C0 /* [CP] Check Pods Manifest.lock */,
 				A022EFB81D611945000CABAC /* Sources */,
 				A022EFB91D611945000CABAC /* Frameworks */,
 				A022EFBA1D611945000CABAC /* Resources */,
+				C951EFC936ECEEDBA9D079DF /* [CP] Embed Pods Frameworks */,
+				A815B1A557FEA639B0760BB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A022EFE71D611945000CABAC /* Build configuration list for PBXNativeTarget "tictactoeTests" */;
 			buildPhases = (
+				BBEBFE6042ED9651A5007F08 /* [CP] Check Pods Manifest.lock */,
 				A022EFCC1D611945000CABAC /* Sources */,
 				A022EFCD1D611945000CABAC /* Frameworks */,
 				A022EFCE1D611945000CABAC /* Resources */,
+				8A202869AB8E9F6B18091BC5 /* [CP] Embed Pods Frameworks */,
+				27C0F58404A8268000428E30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A022EFEA1D611945000CABAC /* Build configuration list for PBXNativeTarget "tictactoeUITests" */;
 			buildPhases = (
+				481ADC122AD59DA0A8444DED /* [CP] Check Pods Manifest.lock */,
 				A022EFD71D611945000CABAC /* Sources */,
 				A022EFD81D611945000CABAC /* Frameworks */,
 				A022EFD91D611945000CABAC /* Resources */,
+				1D3A9EB53B8BC87647814C2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,18 +239,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Aarnav Ram";
 				TargetAttributes = {
 					A022EFBB1D611945000CABAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MLFV6FC582;
+						LastSwiftMigration = 0800;
 					};
 					A022EFCF1D611945000CABAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MLFV6FC582;
+						LastSwiftMigration = 0800;
 						TestTargetID = A022EFBB1D611945000CABAC;
 					};
 					A022EFDA1D611945000CABAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MLFV6FC582;
+						LastSwiftMigration = 0800;
 						TestTargetID = A022EFBB1D611945000CABAC;
 					};
 				};
@@ -254,6 +308,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D3A9EB53B8BC87647814C2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tictactoeUITests/Pods-tictactoeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27C0F58404A8268000428E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tictactoeTests/Pods-tictactoeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		481ADC122AD59DA0A8444DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A202869AB8E9F6B18091BC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tictactoeTests/Pods-tictactoeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A815B1A557FEA639B0760BB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tictactoe/Pods-tictactoe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D5F361C318634F0B5F42C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBEBFE6042ED9651A5007F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C951EFC936ECEEDBA9D079DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tictactoe/Pods-tictactoe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A022EFB81D611945000CABAC /* Sources */ = {
@@ -329,10 +506,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: A Ram (C599C93U3T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -374,10 +554,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: A Ram (C599C93U3T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -394,6 +577,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,57 +585,77 @@
 		};
 		A022EFE51D611945000CABAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E7B6A915EF2F0E2EC3F2D0 /* Pods-tictactoe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MLFV6FC582;
 				INFOPLIST_FILE = tictactoe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aarnavram.tictactoe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A022EFE61D611945000CABAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352A8BA6F0809BCA2181FBBD /* Pods-tictactoe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MLFV6FC582;
 				INFOPLIST_FILE = tictactoe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aarnavram.tictactoe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		A022EFE81D611945000CABAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473539B9776F1791D4288094 /* Pods-tictactoeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MLFV6FC582;
 				INFOPLIST_FILE = tictactoeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aarnavram.tictactoeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tictactoe.app/tictactoe";
 			};
 			name = Debug;
 		};
 		A022EFE91D611945000CABAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 397E1F8EDF5D8833D7C98381 /* Pods-tictactoeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MLFV6FC582;
 				INFOPLIST_FILE = tictactoeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aarnavram.tictactoeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tictactoe.app/tictactoe";
 			};
 			name = Release;
 		};
 		A022EFEB1D611945000CABAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F9937650B087F6A1863FE99 /* Pods-tictactoeUITests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MLFV6FC582;
 				INFOPLIST_FILE = tictactoeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aarnavram.tictactoeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = tictactoe;
 				USES_XCTRUNNER = YES;
 			};
@@ -459,11 +663,15 @@
 		};
 		A022EFEC1D611945000CABAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F227121C9674A2346BC1BD9B /* Pods-tictactoeUITests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MLFV6FC582;
 				INFOPLIST_FILE = tictactoeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aarnavram.tictactoeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = tictactoe;
 				USES_XCTRUNNER = YES;
 			};

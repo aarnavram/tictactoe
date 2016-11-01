@@ -14,11 +14,20 @@ class ViewController: UIViewController {
     var mainArr:[String] = ["*","*","*","*","*","*","*","*","*"]
     var currentChar = "*"
     var roundOver:Bool = false
-    var timer:NSTimer!
+    var timer:Timer!
     var moves:Int = 0
     let blue = UIColor(red: 106/255, green: 123/255, blue: 255/255, alpha: 1)
     var player1score = 0
     var player2score = 0
+    
+    
+    // Set colors (default colors are red, green and blue)
+    var colorArray = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
+    UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
+    UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
+    UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
+    UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
+    
     
     @IBOutlet weak var player2Label: UILabel!
     @IBOutlet weak var player1Label: UILabel!
@@ -43,39 +52,47 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onButtonPressed(sender: UIButton) {
+        var randomNumber = Int(arc4random_uniform(5))
+        var randomNumber2 = Int(arc4random_uniform(5))
         if state == 0 && !roundOver {
-            sender.setTitle("X", forState: .Normal)
-            sender.setTitleColor(blue, forState: .Normal) //clear color to blue to get the fade animation
+            sender.setTitle("X", for: .normal)
+            while randomNumber == randomNumber2 {
+                randomNumber = Int(arc4random_uniform(5))
+            }
+            sender.setTitleColor(colorArray[randomNumber], for: .normal) //clear color to blue to get the fade animation
             mainArr[sender.tag] = "x"
-            sender.userInteractionEnabled = false
+            sender.isUserInteractionEnabled = false
             currentChar = "x"
             moves = moves + 1
             state = 1
-            roundOver = checkForWin(sender.tag)
+            roundOver = checkForWin(tag: sender.tag)
             if roundOver {
                 if timer != nil {
                     timer.invalidate()
                 }
-                timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
+                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
                 moves = 0
                 player1score = player1score + 1
                 player1Label.text = "Player 1 : \(player1score)"
             }
             checkNoWin()
         } else if state == 1 && !roundOver {
-            sender.setTitle("O", forState: .Normal)
-            sender.setTitleColor(UIColor.grayColor(), forState: .Normal) // clear to gray to get fade animation
+            sender.setTitle("O", for: .normal)
+            while randomNumber == randomNumber2 {
+                randomNumber2 = Int(arc4random_uniform(5))
+            }
+            sender.setTitleColor(colorArray[randomNumber2], for: .normal) // clear to gray to get fade animation
             mainArr[sender.tag] = "o"
-            sender.userInteractionEnabled = false
+            sender.isUserInteractionEnabled = false
             currentChar = "o"
             moves = moves + 1
             state = 0
-            roundOver = checkForWin(sender.tag)
+            roundOver = checkForWin(tag: sender.tag)
             if roundOver {
                 if timer != nil {
                     timer.invalidate()
                 }
-                timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
+                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
                 moves = 0
                 player2score = player2score + 1
                 player2Label.text = "Player 2 : \(player2score)"
@@ -182,39 +199,39 @@ class ViewController: UIViewController {
     
     func checkForWin(tag:Int) -> Bool {
         switch tag {
-        case 0: if straightFirstRow(tag) || HFirstCol(tag) || zeroDia(tag) {
+        case 0: if straightFirstRow(tag: tag) || HFirstCol(tag: tag) || zeroDia(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 1: if HFirstCol(tag) || straightFirstRow(tag) {
+        case 1: if HFirstCol(tag: tag) || straightFirstRow(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 2: if HLastCol(tag) || straightFirstRow(tag) || twoDia(tag) {
+        case 2: if HLastCol(tag: tag) || straightFirstRow(tag: tag) || twoDia(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 3: if HFirstCol(tag) || straightMidRow(tag) {
+        case 3: if HFirstCol(tag: tag) || straightMidRow(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 4: if HMidCol(tag) || midLeft(tag) || midRight(tag) || straightMidRow(tag) {
+        case 4: if HMidCol(tag: tag) || midLeft(tag: tag) || midRight(tag: tag) || straightMidRow(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 5: if straightMidRow(tag) || HLastCol(tag) {
+        case 5: if straightMidRow(tag: tag) || HLastCol(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 6: if sixDia(tag) || straightLastRow(tag) || HFirstCol(tag) {
+        case 6: if sixDia(tag: tag) || straightLastRow(tag: tag) || HFirstCol(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 7: if straightLastRow(tag) || HMidCol(tag) {
+        case 7: if straightLastRow(tag: tag) || HMidCol(tag: tag) {
             print("\(currentChar) won")
             return true
             }
-        case 8: if eightDia(tag) || HLastCol(tag) || straightLastRow(tag) {
+        case 8: if eightDia(tag: tag) || HLastCol(tag: tag) || straightLastRow(tag: tag) {
             print("\(currentChar) won")
             return true
             }
@@ -230,30 +247,31 @@ class ViewController: UIViewController {
         currentChar = "*"
         clearBtnColors()
         enableInteraction()
+        moves = 0
     }
     
     func enableInteraction() {
-        btn0.userInteractionEnabled = true
-        btn1.userInteractionEnabled = true
-        btn2.userInteractionEnabled = true
-        btn3.userInteractionEnabled = true
-        btn4.userInteractionEnabled = true
-        btn5.userInteractionEnabled = true
-        btn6.userInteractionEnabled = true
-        btn7.userInteractionEnabled = true
-        btn8.userInteractionEnabled = true
+        btn0.isUserInteractionEnabled = true
+        btn1.isUserInteractionEnabled = true
+        btn2.isUserInteractionEnabled = true
+        btn3.isUserInteractionEnabled = true
+        btn4.isUserInteractionEnabled = true
+        btn5.isUserInteractionEnabled = true
+        btn6.isUserInteractionEnabled = true
+        btn7.isUserInteractionEnabled = true
+        btn8.isUserInteractionEnabled = true
     }
     
     func clearBtnColors() {
-        btn0.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn1.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn2.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn3.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn4.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn5.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn6.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn7.setTitleColor(UIColor.clearColor(), forState: .Normal)
-        btn8.setTitleColor(UIColor.clearColor(), forState: .Normal)
+        btn0.setTitleColor(UIColor.clear, for: .normal)
+        btn1.setTitleColor(UIColor.clear, for: .normal)
+        btn2.setTitleColor(UIColor.clear, for: .normal)
+        btn3.setTitleColor(UIColor.clear, for: .normal)
+        btn4.setTitleColor(UIColor.clear, for: .normal)
+        btn5.setTitleColor(UIColor.clear, for: .normal)
+        btn6.setTitleColor(UIColor.clear, for: .normal)
+        btn7.setTitleColor(UIColor.clear, for: .normal)
+        btn8.setTitleColor(UIColor.clear, for: .normal)
     }
     
     func checkNoWin() {
@@ -261,7 +279,7 @@ class ViewController: UIViewController {
             if timer != nil {
                 timer.invalidate()
             }
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
         }
     }
     
