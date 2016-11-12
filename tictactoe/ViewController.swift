@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SAConfettiView
 
 class ViewController: UIViewController {
     
@@ -45,6 +46,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let confettiView = SAConfettiView(frame: self.view.bounds)
+        self.view.addSubview(confettiView)
+        self.view.sendSubview(toBack: confettiView)
+        confettiView.type! = .diamond
+        confettiView.intensity = 0.75
+        confettiView.startConfetti()
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
