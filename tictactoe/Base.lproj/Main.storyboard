@@ -221,6 +221,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomView" destination="cj2-be-i8a" id="E8F-vd-rpb"/>
                         <outlet property="btn0" destination="Pev-mu-U1Z" id="ife-iC-5QR"/>
                         <outlet property="btn1" destination="b7S-Ef-M0a" id="9Qt-8Y-Uwk"/>
                         <outlet property="btn2" destination="aDB-41-RcJ" id="w9t-fY-d9b"/>
@@ -230,8 +231,11 @@
                         <outlet property="btn6" destination="hs9-jD-W8x" id="XfE-fz-Wbj"/>
                         <outlet property="btn7" destination="xSM-fb-3Vd" id="IhW-Up-qVH"/>
                         <outlet property="btn8" destination="N94-oh-FAG" id="l94-M7-d09"/>
+                        <outlet property="leftView" destination="WPR-UD-dci" id="AnJ-9V-kSM"/>
                         <outlet property="player1Label" destination="lcw-nA-ZOY" id="cBX-Z7-Bek"/>
                         <outlet property="player2Label" destination="Rae-bK-esb" id="Uw5-XV-htC"/>
+                        <outlet property="rightView" destination="SCI-57-s2z" id="4kz-iu-rqe"/>
+                        <outlet property="topView" destination="L04-dn-AdH" id="6H7-Nq-lGh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

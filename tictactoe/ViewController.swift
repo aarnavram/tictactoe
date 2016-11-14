@@ -11,6 +11,12 @@ import SAConfettiView
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var leftView: UIView!
+    @IBOutlet weak var rightView: UIView!
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var bottomView: UIView!
+
     var state:Int = 0
     var mainArr:[String] = ["*","*","*","*","*","*","*","*","*"]
     var currentChar = "*"
@@ -20,7 +26,7 @@ class ViewController: UIViewController {
     let blue = UIColor(red: 106/255, green: 123/255, blue: 255/255, alpha: 1)
     var player1score = 0
     var player2score = 0
-    
+    var confettiView = SAConfettiView(frame: UIScreen.main.bounds)
     
     // Set colors (default colors are red, green and blue)
     var colorArray = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
@@ -46,14 +52,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let confettiView = SAConfettiView(frame: self.view.bounds)
+        confettiView = SAConfettiView(frame: self.view.bounds)
         self.view.addSubview(confettiView)
         self.view.sendSubview(toBack: confettiView)
         confettiView.type! = .diamond
         confettiView.intensity = 0.75
-        confettiView.startConfetti()
+        //confettiView.startConfetti()
         
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,10 +72,11 @@ class ViewController: UIViewController {
         var randomNumber2 = Int(arc4random_uniform(5))
         if state == 0 && !roundOver {
             sender.setTitle("X", for: .normal)
-            while randomNumber == randomNumber2 {
+            while randomNumber != randomNumber2 {
                 randomNumber = Int(arc4random_uniform(5))
             }
             sender.setTitleColor(colorArray[randomNumber], for: .normal) //clear color to blue to get the fade animation
+            
             mainArr[sender.tag] = "x"
             sender.isUserInteractionEnabled = false
             currentChar = "x"
@@ -78,6 +87,7 @@ class ViewController: UIViewController {
                 if timer != nil {
                     timer.invalidate()
                 }
+                confettiView.startConfetti()
                 timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
                 moves = 0
                 player1score = player1score + 1
@@ -86,7 +96,7 @@ class ViewController: UIViewController {
             checkNoWin()
         } else if state == 1 && !roundOver {
             sender.setTitle("O", for: .normal)
-            while randomNumber == randomNumber2 {
+            while randomNumber != randomNumber2 {
                 randomNumber2 = Int(arc4random_uniform(5))
             }
             sender.setTitleColor(colorArray[randomNumber2], for: .normal) // clear to gray to get fade animation
@@ -100,7 +110,8 @@ class ViewController: UIViewController {
                 if timer != nil {
                     timer.invalidate()
                 }
-                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
+                confettiView.startConfetti()
+                timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
                 moves = 0
                 player2score = player2score + 1
                 player2Label.text = "Player 2 : \(player2score)"
@@ -250,6 +261,7 @@ class ViewController: UIViewController {
     }
     
     func newRound() {
+        confettiView.stopConfetti()
         roundOver = false
         mainArr = ["*","*","*","*","*","*","*","*","*"]
         currentChar = "*"
@@ -289,6 +301,16 @@ class ViewController: UIViewController {
             }
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
         }
+    }
+    
+    func changeHorizontalViewColors(color: UIColor) {
+        leftView.backgroundColor = color
+        rightView.backgroundColor = color
+    }
+    
+    func changeVerticalViewColors(color: UIColor) {
+        topView.backgroundColor = color
+        bottomView.backgroundColor = color
     }
     
 }
