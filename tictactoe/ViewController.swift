@@ -28,12 +28,12 @@ class ViewController: UIViewController {
     var player2score = 0
     var confettiView = SAConfettiView(frame: UIScreen.main.bounds)
     
-    // Set colors (default colors are red, green and blue)
-    var colorArray = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
-    UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
-    UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
-    UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
-    UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
+//    // Set colors (default colors are red, green and blue)
+//    var colorArray = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
+//    UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
+//    UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
+//    UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
+//    UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
     
     
     @IBOutlet weak var player2Label: UILabel!
@@ -56,10 +56,13 @@ class ViewController: UIViewController {
         self.view.addSubview(confettiView)
         self.view.sendSubview(toBack: confettiView)
         confettiView.type! = .diamond
-        confettiView.intensity = 0.75
-        //confettiView.startConfetti()
-        
+        confettiView.intensity = 1
+        leftView.layer.cornerRadius = 10
+        rightView.layer.cornerRadius = 10
+        topView.layer.cornerRadius = 10
+        bottomView.layer.cornerRadius = 10
     }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -68,14 +71,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onButtonPressed(sender: UIButton) {
-        var randomNumber = Int(arc4random_uniform(5))
-        var randomNumber2 = Int(arc4random_uniform(5))
+//        var randomNumber = Int(arc4random_uniform(5))
+//        var randomNumber2 = Int(arc4random_uniform(5))
         if state == 0 && !roundOver {
             sender.setTitle("X", for: .normal)
-            while randomNumber != randomNumber2 {
-                randomNumber = Int(arc4random_uniform(5))
-            }
-            sender.setTitleColor(colorArray[randomNumber], for: .normal) //clear color to blue to get the fade animation
+//            while randomNumber != randomNumber2 {
+//                randomNumber = Int(arc4random_uniform(5))
+//            }
+            sender.setTitleColor(UIColor.white, for: .normal) //clear color to blue to get the fade animation
             
             mainArr[sender.tag] = "x"
             sender.isUserInteractionEnabled = false
@@ -96,10 +99,10 @@ class ViewController: UIViewController {
             checkNoWin()
         } else if state == 1 && !roundOver {
             sender.setTitle("O", for: .normal)
-            while randomNumber != randomNumber2 {
-                randomNumber2 = Int(arc4random_uniform(5))
-            }
-            sender.setTitleColor(colorArray[randomNumber2], for: .normal) // clear to gray to get fade animation
+//            while randomNumber != randomNumber2 {
+//                randomNumber2 = Int(arc4random_uniform(5))
+//            }
+            sender.setTitleColor(UIColor.white, for: .normal) // clear to gray to get fade animation
             mainArr[sender.tag] = "o"
             sender.isUserInteractionEnabled = false
             currentChar = "o"
