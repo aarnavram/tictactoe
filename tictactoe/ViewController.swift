@@ -96,7 +96,7 @@ class ViewController: UIViewController {
                     timer.invalidate()
                 }
                 confettiView.startConfetti()
-                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
+                timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(ViewController.newRound), userInfo: nil, repeats: false)
                 moves = 0
                 player1score = player1score + 1
                 player1Label.text = "Player 1 : \(player1score)"
@@ -226,41 +226,89 @@ class ViewController: UIViewController {
     
     func checkForWin(tag:Int) -> Bool {
         switch tag {
-        case 0: if straightFirstRow(tag: tag) || HFirstCol(tag: tag) || zeroDia(tag: tag) {
-            print("\(currentChar) won")
+        case 0: if straightFirstRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn3, btnThree: btn6)
             return true
-            }
-        case 1: if HFirstCol(tag: tag) || straightFirstRow(tag: tag) {
-            print("\(currentChar) won")
+        } else if HFirstCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn1, btnThree: btn2)
             return true
-            }
-        case 2: if HLastCol(tag: tag) || straightFirstRow(tag: tag) || twoDia(tag: tag) {
-            print("\(currentChar) won")
+        } else if zeroDia(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn4, btnThree: btn8)
             return true
-            }
-        case 3: if HFirstCol(tag: tag) || straightMidRow(tag: tag) {
+        }
             
-            print("\(currentChar) won")
+        case 1: if HMidCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn1, btnThree: btn2)
+            return true
+        } else if straightFirstRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn1, btnTwo: btn4, btnThree: btn7)
+            return true
+        }
+            
+        case 2: if HLastCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn1, btnThree: btn2)
+            return true
+        } else if straightFirstRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn2, btnTwo: btn5, btnThree: btn8)
+            return true
+        } else if twoDia(tag: tag) {
+            animateButtonsOnWin(btnOne: btn2, btnTwo: btn4, btnThree: btn6)
             return true
             }
-        case 4: if HMidCol(tag: tag) || midLeft(tag: tag) || midRight(tag: tag) || straightMidRow(tag: tag) {
-            print("\(currentChar) won")
+            
+        case 3: if HFirstCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn3, btnTwo: btn4, btnThree: btn5)
+            return true
+        } else if straightMidRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn3, btnThree: btn6)
             return true
             }
-        case 5: if straightMidRow(tag: tag) || HLastCol(tag: tag) {
-            print("\(currentChar) won")
+            
+        case 4: if HMidCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn3, btnTwo: btn4, btnThree: btn5)
+            return true
+        } else if midLeft(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn4, btnThree: btn8)
+            return true
+        } else if midRight(tag: tag) {
+            animateButtonsOnWin(btnOne: btn4, btnTwo: btn2, btnThree: btn6)
+            return true
+        } else if straightMidRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn1, btnTwo: btn4, btnThree: btn7)
             return true
             }
-        case 6: if sixDia(tag: tag) || straightLastRow(tag: tag) || HFirstCol(tag: tag) {
-            print("\(currentChar) won")
+        case 5: if straightMidRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn5, btnTwo: btn2, btnThree: btn8)
+            return true
+        } else if HLastCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn3, btnTwo: btn4, btnThree: btn5)
             return true
             }
-        case 7: if straightLastRow(tag: tag) || HMidCol(tag: tag) {
-            print("\(currentChar) won")
+        case 6: if sixDia(tag: tag) {
+            animateButtonsOnWin(btnOne: btn6, btnTwo: btn4, btnThree: btn2)
+            return true
+        } else if straightLastRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn6, btnTwo: btn3, btnThree: btn0)
+            return true
+        } else if  HFirstCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn6, btnTwo: btn8, btnThree: btn7)
             return true
             }
-        case 8: if eightDia(tag: tag) || HLastCol(tag: tag) || straightLastRow(tag: tag) {
-            print("\(currentChar) won")
+        case 7: if straightLastRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn1, btnTwo: btn4, btnThree: btn7)
+            return true
+        } else if HMidCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn6, btnTwo: btn7, btnThree: btn8)
+            return true
+            }
+        case 8: if eightDia(tag: tag) {
+            animateButtonsOnWin(btnOne: btn0, btnTwo: btn4, btnThree: btn8)
+            return true
+        } else if HLastCol(tag: tag) {
+            animateButtonsOnWin(btnOne: btn6, btnTwo: btn7, btnThree: btn8)
+            return true
+        } else if straightLastRow(tag: tag) {
+            animateButtonsOnWin(btnOne: btn2, btnTwo: btn5, btnThree: btn8)
             return true
             }
             
