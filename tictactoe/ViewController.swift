@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
-
-    var toPass:String = ""
     
     var state:Int = 0
     var mainArr:[String] = ["*","*","*","*","*","*","*","*","*"]
@@ -65,7 +63,6 @@ class ViewController: UIViewController {
         topView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
         
-        player1Label.text = toPass
     }
     
     
@@ -76,14 +73,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onButtonPressed(sender: UIButton) {
-//        var randomNumber = Int(arc4random_uniform(5))
-//        var randomNumber2 = Int(arc4random_uniform(5))
         if state == 0 && !roundOver {
             sender.setTitle("X", for: .normal)
-//            while randomNumber != randomNumber2 {
-//                randomNumber = Int(arc4random_uniform(5))
-//            }
-            sender.setTitleColor(UIColor.white, for: .normal) //clear color to blue to get the fade animation
+            sender.setTitleColor(UIColor.white, for: .normal) //clear color to white to get the fade animation
             
             mainArr[sender.tag] = "x"
             sender.isUserInteractionEnabled = false
@@ -104,10 +96,7 @@ class ViewController: UIViewController {
             checkNoWin()
         } else if state == 1 && !roundOver {
             sender.setTitle("O", for: .normal)
-//            while randomNumber != randomNumber2 {
-//                randomNumber2 = Int(arc4random_uniform(5))
-//            }
-            sender.setTitleColor(UIColor.white, for: .normal) // clear to gray to get fade animation
+            sender.setTitleColor(UIColor.white, for: .normal) // clear to white to get fade animation
             mainArr[sender.tag] = "o"
             sender.isUserInteractionEnabled = false
             currentChar = "o"
