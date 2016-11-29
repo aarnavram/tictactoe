@@ -8,6 +8,7 @@
 
 import UIKit
 import SAConfettiView
+import Spring
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
 
+    var toPass:String = ""
+    
     var state:Int = 0
     var mainArr:[String] = ["*","*","*","*","*","*","*","*","*"]
     var currentChar = "*"
@@ -61,6 +64,8 @@ class ViewController: UIViewController {
         rightView.layer.cornerRadius = 10
         topView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
+        
+        player1Label.text = toPass
     }
     
     
@@ -234,6 +239,7 @@ class ViewController: UIViewController {
             return true
             }
         case 3: if HFirstCol(tag: tag) || straightMidRow(tag: tag) {
+            
             print("\(currentChar) won")
             return true
             }
@@ -314,6 +320,22 @@ class ViewController: UIViewController {
     func changeVerticalViewColors(color: UIColor) {
         topView.backgroundColor = color
         bottomView.backgroundColor = color
+    }
+    
+    func animateButtonsOnWin(btnOne: UIButton, btnTwo: UIButton, btnThree: UIButton) {
+        UIView.animate(withDuration: 0.3 , animations: {
+            btnOne.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+            btnTwo.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+            btnThree.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+            
+        }, completion: { finish in
+            UIView.animate(withDuration: 1){
+            btnOne.transform = CGAffineTransform.identity
+            btnTwo.transform = CGAffineTransform.identity
+            btnThree.transform = CGAffineTransform.identity
+        }
+            
+        })
     }
     
 }

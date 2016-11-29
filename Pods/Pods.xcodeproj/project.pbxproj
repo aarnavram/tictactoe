@@ -7,122 +7,205 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052FA9B7C932D28A410B9EE6842100CB /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = DB59AA42E01AF882C12222197437F691 /* triangle.png */; };
 		0DFB0B5D8FFCDDC4712C64804476D4B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
-		167F77EE86D94F03FDF228DC9E9E563C /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D933A09DA3D24A5A34956623F1BC8D /* diamond.png */; };
-		2044E2945B912031DE0B076DBCC3108B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		0F7918A80B45BD989E1517938847AF33 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844DB5030D54E4A119EA9E0FF89AA3B /* AsyncImageView.swift */; };
+		16C297C8AAC0AC2A471B37463A57AB6A /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AF994551AE3248E69B70AEA2873FC /* DesignableLabel.swift */; };
+		17B488BBE9254CADA9377AC687E883F1 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62CECC6793ED0B74E1B55CE5D38ADE8 /* TransitionManager.swift */; };
+		21B28D48D9A9EFC2AF800FED324FCC79 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC99043676D694736CF9A87D3544A37 /* DesignableImageView.swift */; };
 		2C3B373F2CC79A329E2D88856823FF45 /* Pods-tictactoeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43967A402425DC02077F44AE14708CCF /* Pods-tictactoeTests-dummy.m */; };
-		2E65B9DC56356BE3DF6F7445914236C8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C86B2D07076B8E68C0E201C1D3F3FB /* star.png */; };
-		32C5EF890E4D527B999A66427576D8DB /* SAConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2120B4D3CC5D48C45E5FD8B8B9A7B /* SAConfettiView-dummy.m */; };
-		41E4603C4386A4503C00C9543EBDEC94 /* SAConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A98044BC37885F8FE72702B8E9568421 /* SAConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5032D15E4F029F8CC2550C720B4B0E2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
-		60873C976839459491E9895FF91BD7D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		2F324F66D2700A5C6BBE31D78A2B1701 /* SAConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 472BDDEFB62C4FAE0EAF5FB799D2FDF0 /* SAConfettiView-dummy.m */; };
+		33D768BBC6F0B1BCC1BAE9A4F0E95089 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD938FCEB6EDB7854D58D05263BBC885 /* SpringView.swift */; };
+		3E530FEC4C77A1421B719CD7D78E35C1 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF639E11377770EC697B3A7BDED3EE2A /* SoundPlayer.swift */; };
+		3E86C99B783AAA13054E6A49716ED28B /* Pods-tictactoe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7B979F5ABA978F1062A68724FD2CD7 /* Pods-tictactoe-dummy.m */; };
+		4363B7FF334DB4630D57ACF9CAA15B04 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A854EE64B8A4BB43EAC58E171345E3C7 /* star.png */; };
+		44E79D192EB66A3AC8EAC6EFF2095222 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A23720DC5CEB96391B621516FC9C3 /* DesignableTabBarController.swift */; };
+		4F643DA5F262F95FE7224F157E69ADEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		532CF885ED473EA34646621697EFFE0F /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E73B650E8BB8A5BBD2BB61D3066DB /* DesignableTextField.swift */; };
+		55A90BC714B6DE67576573D3BCE1CD11 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC20E5CFFF1A8272613A5AC8483DAFE /* SpringAnimation.swift */; };
+		589A7F1DD86BA5CF842690C209487D3B /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B769DA0E59EE1DF88E39389CFC9E44 /* KeyboardLayoutConstraint.swift */; };
+		5C7282E8F57488046FFF77C1BAF64FB3 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B8D0D73033AA934E50D2DD61C837578 /* diamond.png */; };
+		62FEF5DE7F3AE3DF56989C3CD3BABE3E /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE833F0191D7D94167F920D715682A /* Spring.swift */; };
+		63C5E993E824D6C33C6BE02BA0E7E6D6 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7F2CCB3B2AC1001EEAD694670D42F /* SpringTextField.swift */; };
 		65FD093ED7B863567F2C57E4627BBDE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
-		6B9993C119B61127DCCEF1F7E94B921A /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A2A0411716C3441448F16E349A3B32 /* triangle.png */; };
+		6BE69DC513D30C98714F9B185F501997 /* SAConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D87B4E44281C386C8C9D3BD9DE65E5 /* SAConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E97AFD6C7C4E4915402D156A52B82F9 /* Pods-tictactoe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE72D891981C902F6E88031535F53DB /* Pods-tictactoe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70E60CACE96D048EEB929CF9F645262B /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0536C52FB0FF848D35A4EF7C804E1C /* AutoTextView.swift */; };
 		7468571D149076C78A3580B7EB7D065C /* Pods-tictactoeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D390EB66FE4B79F01D7496D4B0A889 /* Pods-tictactoeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74DED4B3EB5AC17281977C5E5A8C99BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
-		81010DB0CD7BB2346B5BB8E3B719D2EF /* SAConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC76726A79B87A75EC0CA147AD0CE7 /* SAConfettiView.bundle */; };
-		838D59C7FD14AE2E1A101561F48DC9CB /* Pods-tictactoe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7B979F5ABA978F1062A68724FD2CD7 /* Pods-tictactoe-dummy.m */; };
-		96054ADF0F2AA70E28C0371AD669F66A /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F816E0189053030EAD9052DCBAC79 /* SAConfettiView.swift */; };
-		E09D0C03BFB725F509974A20D6C2FA05 /* Pods-tictactoe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE72D891981C902F6E88031535F53DB /* Pods-tictactoe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E2318B6ED3359F0657DDBEF80249EC7 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D006815DFD84312F16465262AB0F0B18 /* LoadingView.xib */; };
+		7E93BA3611B8FC3DFB4561F454778CB0 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C3DFCA8D1350EA346AD9A0FCC7FABC /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838A88AF28EC0A4B163D181247D214AD /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 957BDE1969B323025A2CAA2F81044CA4 /* confetti.png */; };
+		8455039980EC369634ADE91F62912B2E /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C53DDDE11AB8B82A675C9009B1290 /* TransitionZoom.swift */; };
+		86EDB8BCC6262582FBDBCD1DD7FC21BA /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D4F82C4D575A04EFC9AD014BABE518 /* SpringButton.swift */; };
+		9CC06A9B749AA7C189AC4BD35306D9ED /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B82C890DC1B88CC5CB942FA401416 /* BlurView.swift */; };
+		A906A56609111478167E00D9E004F49D /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783692EE0BCAF6B19D860E0E7618E6B /* SpringImageView.swift */; };
+		AE361397196D1340B1A4E51441D79DBB /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD871CE38802F7E6C73BD46DA128A3 /* SAConfettiView.swift */; };
+		AF3F6AEEA4449588F5E300DF682EC413 /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C980B5A14F93B047C7F3A892AC73E4 /* Spring-dummy.m */; };
+		B053FE0B0F979F696763FBB63A23A3A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237E1325E26F13A944C2BD72BF233661 /* Images.xcassets */; };
+		B4496F50FBB7FB0CB374EE18241DBE9D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62FB6D22C4872160D3C9A3859D45D9 /* ImageLoader.swift */; };
+		B84D7CEFEAAF7C36BFB3EC17751344D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		CE419ED1F7FD1F2A0E80F59115700A78 /* SAConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAC208966D54696C50CCB38DC9ADE048 /* SAConfettiView.bundle */; };
+		D1A247EB7317E28E1451F57C72FE5F17 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF88ED303DF5A34AD1C5B09F6BA0F3BB /* DesignableView.swift */; };
+		D93F7838C3914B255DE51DAD8152CF82 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4CB18E81A8A78B6EA5E41D549F5 /* UnwindSegue.swift */; };
+		DC1C7C5F25370415A06B27C908726BD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		DC915957C864A837769F1629B9736B4E /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2570A71E2B6CB92E867E87D6919EC /* Misc.swift */; };
+		E0CC0B2772F71793C404DB704BDC36B3 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A92F6F02CCF076EAF09E6F459AE89 /* SpringTextView.swift */; };
+		E3FA8DDB0ED62FAF3624D095CADEAA6F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		EC2A53B8400BFE938E07F53D8904270B /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EA66914B57E5D75A52BCE4F5CD9E22 /* SpringLabel.swift */; };
+		ED9A12AF7528EA62D81F79F3217C7F66 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2F71E795AA4A90F80F96CE9FF7161 /* DesignableTextView.swift */; };
+		F1C0CECE2E8D5BD331A075AC4AB3E524 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24C43E16FD22AC25EB4CA8EF9A66E3 /* DesignableButton.swift */; };
 		F50008BCB585FE67D187C7751DF8331C /* Pods-tictactoeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C8203A320131231B974179B023088A /* Pods-tictactoeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8341CCD4EDD87239523A972E3C39169 /* Pods-tictactoeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2507DD1ED3FD71D33C139A60C1D2A31D /* Pods-tictactoeUITests-dummy.m */; };
-		F91F7F6A9D87DD72BF7A77CA52B3E24B /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D99C7C07F2A263B6C9DA252972115 /* confetti.png */; };
+		F925682E6B942FC90300AD57CC4A3FA4 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA628B9730159334CBDA236DBEC0CDA /* AsyncButton.swift */; };
+		FC4D98ECF1EF4BFE21DB29E6CA1D47F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		FD75FE0D486FF6D94B1EA6A2BA3FD64C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA57167F08FFA4636F13CB65AE5E844 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		037BD01EBAFC1C9C2D1CA711629A8849 /* PBXContainerItemProxy */ = {
+		2B90E4EDDCDAB7C26DE7BDE5787936C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF39C84F89D96BD0F8D5241A3616ADE3;
+			remoteGlobalIDString = 86D9D6A863624638F3C81F7819A6E760;
 			remoteInfo = "SAConfettiView-SAConfettiView";
 		};
-		D6F598DD7D296C3B8C3AC74CC5EA7229 /* PBXContainerItemProxy */ = {
+		8EAB71ACB1F3FB0816701B4A7FF3002C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92E182A105AFE227820A9C3285AEC8FE;
+			remoteGlobalIDString = 67829BA31BA2B1C617AC9ECA315EEDC1;
 			remoteInfo = SAConfettiView;
+		};
+		E5976B6E5BBCE5D6220BF75FFB7C6903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33DAB88F2F0DADA0952C1F867CFACF16;
+			remoteInfo = Spring;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D7F2CCB3B2AC1001EEAD694670D42F /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
 		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		09E43DC53BCD4CFBCD01B7372397A0A2 /* Pods-tictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
-		0BD46C151B323F15D1A457314971E7E4 /* Pods_tictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391B474D85B0E17E27B121396DAF559 /* Pods-tictactoeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tictactoeTests.modulemap"; sourceTree = "<group>"; };
 		1604467AACE7404B1FD2B0C64BCB6C21 /* Pods-tictactoeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tictactoeUITests.modulemap"; sourceTree = "<group>"; };
+		1844DB5030D54E4A119EA9E0FF89AA3B /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		1B8D0D73033AA934E50D2DD61C837578 /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = Pod/Assets/diamond.png; sourceTree = "<group>"; };
+		1E88ABC36268903EAA62DD3B320DA6F4 /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
 		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		237E1325E26F13A944C2BD72BF233661 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
 		2507DD1ED3FD71D33C139A60C1D2A31D /* Pods-tictactoeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tictactoeUITests-dummy.m"; sourceTree = "<group>"; };
+		26C563C7D19B6AAA3E2858137B4263BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D910F7A7173A08F253B47F0B908EFC6 /* Pods-tictactoe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tictactoe-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E48033FB5ED18D53B6156D03D66F691 /* Pods_tictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D4F82C4D575A04EFC9AD014BABE518 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
 		3305FF3742850F1B6133C725CF70FDB4 /* Pods-tictactoe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tictactoe.release.xcconfig"; sourceTree = "<group>"; };
 		3A7098CFAED494EA19C6415C655ED661 /* Pods-tictactoeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tictactoeTests-resources.sh"; sourceTree = "<group>"; };
 		3BFC59BA62B3294723A7546D694CC2A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CF93050E0846B1EF0D0FB8ABC15B02E /* Pods-tictactoeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tictactoeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		3FA2570A71E2B6CB92E867E87D6919EC /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
 		43967A402425DC02077F44AE14708CCF /* Pods-tictactoeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tictactoeTests-dummy.m"; sourceTree = "<group>"; };
 		44785AB00EE6F9908109D24D6D0EDE0E /* Pods-tictactoe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tictactoe-resources.sh"; sourceTree = "<group>"; };
-		4A6F816E0189053030EAD9052DCBAC79 /* SAConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAConfettiView.swift; path = Pod/Classes/SAConfettiView.swift; sourceTree = "<group>"; };
+		472BDDEFB62C4FAE0EAF5FB799D2FDF0 /* SAConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAConfettiView-dummy.m"; sourceTree = "<group>"; };
+		47BD871CE38802F7E6C73BD46DA128A3 /* SAConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAConfettiView.swift; path = Pod/Classes/SAConfettiView.swift; sourceTree = "<group>"; };
+		4B62FB6D22C4872160D3C9A3859D45D9 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		4DA57167F08FFA4636F13CB65AE5E844 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
 		55D9F0EC0537AB00EDCB08A2C296554F /* Pods-tictactoeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tictactoeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		596A92F6F02CCF076EAF09E6F459AE89 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
 		5A34CBF680C9FA5D55DC0454B7B35E76 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644E486C7C24EE7F18938409AC79896A /* SAConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAConfettiView.modulemap; sourceTree = "<group>"; };
+		673129F11DE4C7E101D820474058139B /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
 		691140213C4E3F1C858836B378E0A2C8 /* Pods-tictactoeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tictactoeUITests-resources.sh"; sourceTree = "<group>"; };
-		7ABC76726A79B87A75EC0CA147AD0CE7 /* SAConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0FE47E3711C1BE3ACA3AD18336A036 /* Pods_tictactoe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3B702D96E1FAA21A397AE1A94DC06F /* Pods_tictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0DB4CB18E81A8A78B6EA5E41D549F5 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		77EA66914B57E5D75A52BCE4F5CD9E22 /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
 		7BE72D891981C902F6E88031535F53DB /* Pods-tictactoe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tictactoe-umbrella.h"; sourceTree = "<group>"; };
+		7D0DF473BCA15BC720A54DEE131AD57C /* ResourceBundle-SAConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SAConfettiView-Info.plist"; sourceTree = "<group>"; };
+		7DF3CFD4EF133273969169C3BA7E45EC /* SAConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-prefix.pch"; sourceTree = "<group>"; };
+		7EFE833F0191D7D94167F920D715682A /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
 		7F6984778BD23333B1EC62115CDDE622 /* Pods-tictactoe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tictactoe-frameworks.sh"; sourceTree = "<group>"; };
+		7FC1AD6F736E0937F5E612AD3E3EC2A5 /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Spring.modulemap; sourceTree = "<group>"; };
+		81D87B4E44281C386C8C9D3BD9DE65E5 /* SAConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		8783692EE0BCAF6B19D860E0E7618E6B /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
 		8B25C19888FB3F11DC88A5083A207528 /* Pods-tictactoeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tictactoeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B8E73F218599B2DFF1A3F629228206C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92A2120B4D3CC5D48C45E5FD8B8B9A7B /* SAConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAConfettiView-dummy.m"; sourceTree = "<group>"; };
-		92D933A09DA3D24A5A34956623F1BC8D /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = Pod/Assets/diamond.png; sourceTree = "<group>"; };
+		8B4DBC3AE2FFCFEB8522CD3E6F16F82C /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		957BDE1969B323025A2CAA2F81044CA4 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = Pod/Assets/confetti.png; sourceTree = "<group>"; };
 		98C8203A320131231B974179B023088A /* Pods-tictactoeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tictactoeTests-umbrella.h"; sourceTree = "<group>"; };
 		9F83568B7AE207B5FF57CC2A81A3711E /* Pods-tictactoeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tictactoeTests-frameworks.sh"; sourceTree = "<group>"; };
-		A0C86B2D07076B8E68C0E201C1D3F3FB /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = Pod/Assets/star.png; sourceTree = "<group>"; };
+		A10A23720DC5CEB96391B621516FC9C3 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		A2B769DA0E59EE1DF88E39389CFC9E44 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		A64B82C890DC1B88CC5CB942FA401416 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
 		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A98044BC37885F8FE72702B8E9568421 /* SAConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		A854EE64B8A4BB43EAC58E171345E3C7 /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = Pod/Assets/star.png; sourceTree = "<group>"; };
+		AAC208966D54696C50CCB38DC9ADE048 /* SAConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC20E5CFFF1A8272613A5AC8483DAFE /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
+		AC24C43E16FD22AC25EB4CA8EF9A66E3 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
 		AE7B979F5ABA978F1062A68724FD2CD7 /* Pods-tictactoe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tictactoe-dummy.m"; sourceTree = "<group>"; };
-		B2CA7CF4E76B9C9AB5B71AE794D4F72D /* Pods_tictactoe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C3DFCA8D1350EA346AD9A0FCC7FABC /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
 		B356E223C83C7F85F4F1D94733530D60 /* Pods-tictactoe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tictactoe.debug.xcconfig"; sourceTree = "<group>"; };
-		B9FCBFD4A8D95A56932DB63B305396FA /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C980B5A14F93B047C7F3A892AC73E4 /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
 		BB3304026DBC17043BC5B00647D2E48F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C099801A24D433DAF7E09958D3D5CC98 /* Pods-tictactoeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tictactoeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C6D390EB66FE4B79F01D7496D4B0A889 /* Pods-tictactoeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tictactoeUITests-umbrella.h"; sourceTree = "<group>"; };
-		CA74B9B1136D8539623AD6D29EFC7CE8 /* SAConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-prefix.pch"; sourceTree = "<group>"; };
-		CE844EE9E16DD07CE307E329DC3992F6 /* SAConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAConfettiView.xcconfig; sourceTree = "<group>"; };
-		D04D99C7C07F2A263B6C9DA252972115 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = Pod/Assets/confetti.png; sourceTree = "<group>"; };
-		D3A2A0411716C3441448F16E349A3B32 /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = Pod/Assets/triangle.png; sourceTree = "<group>"; };
+		C94C53DDDE11AB8B82A675C9009B1290 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
+		CBA628B9730159334CBDA236DBEC0CDA /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
+		CD938FCEB6EDB7854D58D05263BBC885 /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
+		D006815DFD84312F16465262AB0F0B18 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		D32AF994551AE3248E69B70AEA2873FC /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
 		D6C93054F7BCD9E361CD222FC4368D5B /* Pods-tictactoeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tictactoeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7613A0FBFAF019D5C915A09E585BA00 /* Pods-tictactoe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tictactoe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0346FF3EF24351C359A64C44B2A8C6D /* SAConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAConfettiView.modulemap; sourceTree = "<group>"; };
+		D7AE15FF2066316B810391E6F712F92A /* SAConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAConfettiView.xcconfig; sourceTree = "<group>"; };
+		DB59AA42E01AF882C12222197437F691 /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = Pod/Assets/triangle.png; sourceTree = "<group>"; };
+		DF639E11377770EC697B3A7BDED3EE2A /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
+		DF88ED303DF5A34AD1C5B09F6BA0F3BB /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		E0A2F71E795AA4A90F80F96CE9FF7161 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		E62CECC6793ED0B74E1B55CE5D38ADE8 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		E64E73B650E8BB8A5BBD2BB61D3066DB /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
+		E6E29ADC2362AF3DA6C573CC090FA9FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0536C52FB0FF848D35A4EF7C804E1C /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
 		ED0717EE1EEF8796F621AD5A7780FB7A /* Pods-tictactoeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tictactoeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFC99043676D694736CF9A87D3544A37 /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
 		EFD0B6738AB952E62A68686E2ABBE933 /* Pods-tictactoeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tictactoeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F2499898F0794912A075C103E3E1B14B /* Pods_tictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F533D5284FC13D37FD06FB2710C8B9F2 /* ResourceBundle-SAConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SAConfettiView-Info.plist"; sourceTree = "<group>"; };
 		F61B75D7051CB9B6ADDE0F887BFC1C5B /* Pods-tictactoe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tictactoe.modulemap"; sourceTree = "<group>"; };
 		F7CA28EE44B3CE9730E4B0D0B8778C1C /* Pods-tictactoeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tictactoeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF8D12E33147AF9634FF1393F5FC108C /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A05271A15435E7444559C961BD002DD /* Frameworks */ = {
+		5091C25419094F2624579F8AE1DFC9AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60873C976839459491E9895FF91BD7D2 /* Foundation.framework in Frameworks */,
-				2044E2945B912031DE0B076DBCC3108B /* QuartzCore.framework in Frameworks */,
-				5032D15E4F029F8CC2550C720B4B0E2F /* UIKit.framework in Frameworks */,
+				FC4D98ECF1EF4BFE21DB29E6CA1D47F3 /* Foundation.framework in Frameworks */,
+				E3FA8DDB0ED62FAF3624D095CADEAA6F /* QuartzCore.framework in Frameworks */,
+				DC1C7C5F25370415A06B27C908726BD0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42B15D340F101B43FE6389A1D75627E0 /* Frameworks */ = {
+		B2229F8F179DF268C3CA46FA61869BCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84D7CEFEAAF7C36BFB3EC17751344D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C50A51C265526501CC578D070554812C /* Frameworks */ = {
+		B57A3B5FCC72F6F3849736A5A95562CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DED4B3EB5AC17281977C5E5A8C99BF /* Foundation.framework in Frameworks */,
+				4F643DA5F262F95FE7224F157E69ADEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB5984D7922CA72E87E79D6EBEEFFD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,14 +254,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		271191552F2784497C776D9EBC9A2E77 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				92665AE6D8B5E43E1938545C2F78A8B1 /* SAConfettiView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		279BE7BB2381828649650AB844A485BF /* Pods-tictactoe */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,16 +272,13 @@
 			path = "Target Support Files/Pods-tictactoe";
 			sourceTree = "<group>";
 		};
-		64D399DD4215B2827519B965B61A5012 /* Products */ = {
+		27C8808C7D987EF5E2BC482389C3A5A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2CA7CF4E76B9C9AB5B71AE794D4F72D /* Pods_tictactoe.framework */,
-				F2499898F0794912A075C103E3E1B14B /* Pods_tictactoeTests.framework */,
-				0BD46C151B323F15D1A457314971E7E4 /* Pods_tictactoeUITests.framework */,
-				7ABC76726A79B87A75EC0CA147AD0CE7 /* SAConfettiView.bundle */,
-				B9FCBFD4A8D95A56932DB63B305396FA /* SAConfettiView.framework */,
+				DA0837708971E39E38D5E6615023BA51 /* SAConfettiView */,
+				A09DC40356B5008DC4645A2D7EFDF72B /* Spring */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6A94E3C245F0A2EE67CBA2D374313639 /* Targets Support Files */ = {
@@ -224,20 +296,69 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				271191552F2784497C776D9EBC9A2E77 /* Pods */,
-				64D399DD4215B2827519B965B61A5012 /* Products */,
+				27C8808C7D987EF5E2BC482389C3A5A3 /* Pods */,
+				F9A6AEA0F86EC4E630BA42F8EF381E08 /* Products */,
 				6A94E3C245F0A2EE67CBA2D374313639 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		92665AE6D8B5E43E1938545C2F78A8B1 /* SAConfettiView */ = {
+		8D8E8CD279B4D30E1D47114C50B3D54F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A6F816E0189053030EAD9052DCBAC79 /* SAConfettiView.swift */,
-				CDA6E2B809015F5EAEA4DEA12E7EB72F /* Resources */,
-				BFEE152500B0906A5926024AFB8DCB2B /* Support Files */,
+				E6E29ADC2362AF3DA6C573CC090FA9FA /* Info.plist */,
+				7FC1AD6F736E0937F5E612AD3E3EC2A5 /* Spring.modulemap */,
+				673129F11DE4C7E101D820474058139B /* Spring.xcconfig */,
+				B4C980B5A14F93B047C7F3A892AC73E4 /* Spring-dummy.m */,
+				1E88ABC36268903EAA62DD3B320DA6F4 /* Spring-prefix.pch */,
+				B1C3DFCA8D1350EA346AD9A0FCC7FABC /* Spring-umbrella.h */,
 			);
-			path = SAConfettiView;
+			name = "Support Files";
+			path = "../Target Support Files/Spring";
+			sourceTree = "<group>";
+		};
+		9F00AD4C15AFBE0A20CD8290CB9BDF7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				237E1325E26F13A944C2BD72BF233661 /* Images.xcassets */,
+				D006815DFD84312F16465262AB0F0B18 /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A09DC40356B5008DC4645A2D7EFDF72B /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				CBA628B9730159334CBDA236DBEC0CDA /* AsyncButton.swift */,
+				1844DB5030D54E4A119EA9E0FF89AA3B /* AsyncImageView.swift */,
+				EA0536C52FB0FF848D35A4EF7C804E1C /* AutoTextView.swift */,
+				A64B82C890DC1B88CC5CB942FA401416 /* BlurView.swift */,
+				AC24C43E16FD22AC25EB4CA8EF9A66E3 /* DesignableButton.swift */,
+				EFC99043676D694736CF9A87D3544A37 /* DesignableImageView.swift */,
+				D32AF994551AE3248E69B70AEA2873FC /* DesignableLabel.swift */,
+				A10A23720DC5CEB96391B621516FC9C3 /* DesignableTabBarController.swift */,
+				E64E73B650E8BB8A5BBD2BB61D3066DB /* DesignableTextField.swift */,
+				E0A2F71E795AA4A90F80F96CE9FF7161 /* DesignableTextView.swift */,
+				DF88ED303DF5A34AD1C5B09F6BA0F3BB /* DesignableView.swift */,
+				4B62FB6D22C4872160D3C9A3859D45D9 /* ImageLoader.swift */,
+				A2B769DA0E59EE1DF88E39389CFC9E44 /* KeyboardLayoutConstraint.swift */,
+				4DA57167F08FFA4636F13CB65AE5E844 /* LoadingView.swift */,
+				3FA2570A71E2B6CB92E867E87D6919EC /* Misc.swift */,
+				DF639E11377770EC697B3A7BDED3EE2A /* SoundPlayer.swift */,
+				7EFE833F0191D7D94167F920D715682A /* Spring.swift */,
+				ABC20E5CFFF1A8272613A5AC8483DAFE /* SpringAnimation.swift */,
+				31D4F82C4D575A04EFC9AD014BABE518 /* SpringButton.swift */,
+				8783692EE0BCAF6B19D860E0E7618E6B /* SpringImageView.swift */,
+				77EA66914B57E5D75A52BCE4F5CD9E22 /* SpringLabel.swift */,
+				06D7F2CCB3B2AC1001EEAD694670D42F /* SpringTextField.swift */,
+				596A92F6F02CCF076EAF09E6F459AE89 /* SpringTextView.swift */,
+				CD938FCEB6EDB7854D58D05263BBC885 /* SpringView.swift */,
+				E62CECC6793ED0B74E1B55CE5D38ADE8 /* TransitionManager.swift */,
+				C94C53DDDE11AB8B82A675C9009B1290 /* TransitionZoom.swift */,
+				6F0DB4CB18E81A8A78B6EA5E41D549F5 /* UnwindSegue.swift */,
+				9F00AD4C15AFBE0A20CD8290CB9BDF7F /* Resources */,
+				8D8E8CD279B4D30E1D47114C50B3D54F /* Support Files */,
+			);
+			path = Spring;
 			sourceTree = "<group>";
 		};
 		A46A5107E4182F1C06C708CA4CCDDFFD /* Pods-tictactoeTests */ = {
@@ -258,30 +379,40 @@
 			path = "Target Support Files/Pods-tictactoeTests";
 			sourceTree = "<group>";
 		};
-		BFEE152500B0906A5926024AFB8DCB2B /* Support Files */ = {
+		AA64B740788A68CE2E7EEA299660E204 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8B8E73F218599B2DFF1A3F629228206C /* Info.plist */,
-				F533D5284FC13D37FD06FB2710C8B9F2 /* ResourceBundle-SAConfettiView-Info.plist */,
-				E0346FF3EF24351C359A64C44B2A8C6D /* SAConfettiView.modulemap */,
-				CE844EE9E16DD07CE307E329DC3992F6 /* SAConfettiView.xcconfig */,
-				92A2120B4D3CC5D48C45E5FD8B8B9A7B /* SAConfettiView-dummy.m */,
-				CA74B9B1136D8539623AD6D29EFC7CE8 /* SAConfettiView-prefix.pch */,
-				A98044BC37885F8FE72702B8E9568421 /* SAConfettiView-umbrella.h */,
+				957BDE1969B323025A2CAA2F81044CA4 /* confetti.png */,
+				1B8D0D73033AA934E50D2DD61C837578 /* diamond.png */,
+				A854EE64B8A4BB43EAC58E171345E3C7 /* star.png */,
+				DB59AA42E01AF882C12222197437F691 /* triangle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BD3FED3FE332868FCFAA03C03B852732 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26C563C7D19B6AAA3E2858137B4263BE /* Info.plist */,
+				7D0DF473BCA15BC720A54DEE131AD57C /* ResourceBundle-SAConfettiView-Info.plist */,
+				644E486C7C24EE7F18938409AC79896A /* SAConfettiView.modulemap */,
+				D7AE15FF2066316B810391E6F712F92A /* SAConfettiView.xcconfig */,
+				472BDDEFB62C4FAE0EAF5FB799D2FDF0 /* SAConfettiView-dummy.m */,
+				7DF3CFD4EF133273969169C3BA7E45EC /* SAConfettiView-prefix.pch */,
+				81D87B4E44281C386C8C9D3BD9DE65E5 /* SAConfettiView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SAConfettiView";
 			sourceTree = "<group>";
 		};
-		CDA6E2B809015F5EAEA4DEA12E7EB72F /* Resources */ = {
+		DA0837708971E39E38D5E6615023BA51 /* SAConfettiView */ = {
 			isa = PBXGroup;
 			children = (
-				D04D99C7C07F2A263B6C9DA252972115 /* confetti.png */,
-				92D933A09DA3D24A5A34956623F1BC8D /* diamond.png */,
-				A0C86B2D07076B8E68C0E201C1D3F3FB /* star.png */,
-				D3A2A0411716C3441448F16E349A3B32 /* triangle.png */,
+				47BD871CE38802F7E6C73BD46DA128A3 /* SAConfettiView.swift */,
+				AA64B740788A68CE2E7EEA299660E204 /* Resources */,
+				BD3FED3FE332868FCFAA03C03B852732 /* Support Files */,
 			);
-			name = Resources;
+			path = SAConfettiView;
 			sourceTree = "<group>";
 		};
 		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
@@ -294,22 +425,43 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		F9A6AEA0F86EC4E630BA42F8EF381E08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D0FE47E3711C1BE3ACA3AD18336A036 /* Pods_tictactoe.framework */,
+				6E3B702D96E1FAA21A397AE1A94DC06F /* Pods_tictactoeTests.framework */,
+				2E48033FB5ED18D53B6156D03D66F691 /* Pods_tictactoeUITests.framework */,
+				AAC208966D54696C50CCB38DC9ADE048 /* SAConfettiView.bundle */,
+				8B4DBC3AE2FFCFEB8522CD3E6F16F82C /* SAConfettiView.framework */,
+				FF8D12E33147AF9634FF1393F5FC108C /* Spring.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A0BF8614EB3FB83EB7A61DDD52A31FF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E09D0C03BFB725F509974A20D6C2FA05 /* Pods-tictactoe-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0CA400CAAF9AB6AAC8499CDEC2129D7A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F50008BCB585FE67D187C7751DF8331C /* Pods-tictactoeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22010405E42AC9C97DF97E0CD85B25B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE69DC513D30C98714F9B185F501997 /* SAConfettiView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCA0C653FB41A9B6982E2B1003F7385 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E93BA3611B8FC3DFB4561F454778CB0 /* Spring-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,17 +473,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FA49C4558D4206D9A974707E495CC7B /* Headers */ = {
+		A92630C9408D3A2F6F63C7BC1C3298A0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E4603C4386A4503C00C9543EBDEC94 /* SAConfettiView-umbrella.h in Headers */,
+				6E97AFD6C7C4E4915402D156A52B82F9 /* Pods-tictactoe-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		33DAB88F2F0DADA0952C1F867CFACF16 /* Spring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC03D39244FF01DD5B96E906770DB3F /* Build configuration list for PBXNativeTarget "Spring" */;
+			buildPhases = (
+				462E868D12BD7E6E8EC710B96F479AE1 /* Sources */,
+				B57A3B5FCC72F6F3849736A5A95562CA /* Frameworks */,
+				3CCF469EDE2170C8087EED8B06BF4AC0 /* Resources */,
+				5FCA0C653FB41A9B6982E2B1003F7385 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spring;
+			productName = Spring;
+			productReference = FF8D12E33147AF9634FF1393F5FC108C /* Spring.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		67829BA31BA2B1C617AC9ECA315EEDC1 /* SAConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C12B8ACE824C0C95F81B2512D2B7CF1 /* Build configuration list for PBXNativeTarget "SAConfettiView" */;
+			buildPhases = (
+				A3865E3F95F6C4D5D57DA6CB4CC120E8 /* Sources */,
+				5091C25419094F2624579F8AE1DFC9AC /* Frameworks */,
+				A3E1744BF18439378D3F1AAB41777071 /* Resources */,
+				22010405E42AC9C97DF97E0CD85B25B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D25C0C5D3113E7B64AFBAF1075F8E82A /* PBXTargetDependency */,
+			);
+			name = SAConfettiView;
+			productName = SAConfettiView;
+			productReference = 8B4DBC3AE2FFCFEB8522CD3E6F16F82C /* SAConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6BFD8F1FF693E7B82F985C1774A24A99 /* Pods-tictactoeUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 712B5B0FAB8BA10023CD734119C55F3F /* Build configuration list for PBXNativeTarget "Pods-tictactoeUITests" */;
@@ -346,45 +535,25 @@
 			);
 			name = "Pods-tictactoeUITests";
 			productName = "Pods-tictactoeUITests";
-			productReference = 0BD46C151B323F15D1A457314971E7E4 /* Pods_tictactoeUITests.framework */;
+			productReference = 2E48033FB5ED18D53B6156D03D66F691 /* Pods_tictactoeUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7682AE93C5A07E638DA0B08B446D4368 /* Pods-tictactoe */ = {
+		86D9D6A863624638F3C81F7819A6E760 /* SAConfettiView-SAConfettiView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BB560D6B6976FF42097273FD4634901 /* Build configuration list for PBXNativeTarget "Pods-tictactoe" */;
+			buildConfigurationList = DB8545C4B2F6B45C5E0E88FA7B14100E /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */;
 			buildPhases = (
-				FB5F063716582C47139724573F2724E9 /* Sources */,
-				C50A51C265526501CC578D070554812C /* Frameworks */,
-				0A0BF8614EB3FB83EB7A61DDD52A31FF /* Headers */,
+				6ABB01C4BB99D73D4B8201A702BADA98 /* Sources */,
+				CAB5984D7922CA72E87E79D6EBEEFFD1 /* Frameworks */,
+				8D9CA445E3EE3B2CC70206048EE087C5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				533898D8A3C9D162290C5ACB1E1F9787 /* PBXTargetDependency */,
 			);
-			name = "Pods-tictactoe";
-			productName = "Pods-tictactoe";
-			productReference = B2CA7CF4E76B9C9AB5B71AE794D4F72D /* Pods_tictactoe.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		92E182A105AFE227820A9C3285AEC8FE /* SAConfettiView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79815F0F3AA1C4147FACB44A28606E78 /* Build configuration list for PBXNativeTarget "SAConfettiView" */;
-			buildPhases = (
-				BA2AD18A01FC524655B0FBFF561DD917 /* Sources */,
-				0A05271A15435E7444559C961BD002DD /* Frameworks */,
-				60448D9C2A7E500A7CBE2FB3F1295871 /* Resources */,
-				9FA49C4558D4206D9A974707E495CC7B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DF78719FC272C4FAEAC390BBF2523634 /* PBXTargetDependency */,
-			);
-			name = SAConfettiView;
-			productName = SAConfettiView;
-			productReference = B9FCBFD4A8D95A56932DB63B305396FA /* SAConfettiView.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "SAConfettiView-SAConfettiView";
+			productName = "SAConfettiView-SAConfettiView";
+			productReference = AAC208966D54696C50CCB38DC9ADE048 /* SAConfettiView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		A7CA34D6DC7C3679E82731A7C837EBF5 /* Pods-tictactoeTests */ = {
 			isa = PBXNativeTarget;
@@ -400,25 +569,27 @@
 			);
 			name = "Pods-tictactoeTests";
 			productName = "Pods-tictactoeTests";
-			productReference = F2499898F0794912A075C103E3E1B14B /* Pods_tictactoeTests.framework */;
+			productReference = 6E3B702D96E1FAA21A397AE1A94DC06F /* Pods_tictactoeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DF39C84F89D96BD0F8D5241A3616ADE3 /* SAConfettiView-SAConfettiView */ = {
+		FE2364BB70123C24202D056CD683ACA5 /* Pods-tictactoe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 382DB46D0E7F6C0093356E445EF7F5F9 /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */;
+			buildConfigurationList = F1534A9AA312B0EE17D8B2C84712D65C /* Build configuration list for PBXNativeTarget "Pods-tictactoe" */;
 			buildPhases = (
-				8E6434007B1BE40B046DE48BD2387970 /* Sources */,
-				42B15D340F101B43FE6389A1D75627E0 /* Frameworks */,
-				0F7272031F2EBC00A2FCB442A7C85533 /* Resources */,
+				5D5D175E3568AC589E3CD530313379EC /* Sources */,
+				B2229F8F179DF268C3CA46FA61869BCD /* Frameworks */,
+				A92630C9408D3A2F6F63C7BC1C3298A0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E654F8EC2CAFE754042D172D7C3089E /* PBXTargetDependency */,
+				6C8840D0340FAAA970D2DF5084C97071 /* PBXTargetDependency */,
 			);
-			name = "SAConfettiView-SAConfettiView";
-			productName = "SAConfettiView-SAConfettiView";
-			productReference = 7ABC76726A79B87A75EC0CA147AD0CE7 /* SAConfettiView.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = "Pods-tictactoe";
+			productName = "Pods-tictactoe";
+			productReference = 6D0FE47E3711C1BE3ACA3AD18336A036 /* Pods_tictactoe.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -437,54 +608,107 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 64D399DD4215B2827519B965B61A5012 /* Products */;
+			productRefGroup = F9A6AEA0F86EC4E630BA42F8EF381E08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7682AE93C5A07E638DA0B08B446D4368 /* Pods-tictactoe */,
+				FE2364BB70123C24202D056CD683ACA5 /* Pods-tictactoe */,
 				A7CA34D6DC7C3679E82731A7C837EBF5 /* Pods-tictactoeTests */,
 				6BFD8F1FF693E7B82F985C1774A24A99 /* Pods-tictactoeUITests */,
-				92E182A105AFE227820A9C3285AEC8FE /* SAConfettiView */,
-				DF39C84F89D96BD0F8D5241A3616ADE3 /* SAConfettiView-SAConfettiView */,
+				67829BA31BA2B1C617AC9ECA315EEDC1 /* SAConfettiView */,
+				86D9D6A863624638F3C81F7819A6E760 /* SAConfettiView-SAConfettiView */,
+				33DAB88F2F0DADA0952C1F867CFACF16 /* Spring */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F7272031F2EBC00A2FCB442A7C85533 /* Resources */ = {
+		3CCF469EDE2170C8087EED8B06BF4AC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91F7F6A9D87DD72BF7A77CA52B3E24B /* confetti.png in Resources */,
-				167F77EE86D94F03FDF228DC9E9E563C /* diamond.png in Resources */,
-				2E65B9DC56356BE3DF6F7445914236C8 /* star.png in Resources */,
-				6B9993C119B61127DCCEF1F7E94B921A /* triangle.png in Resources */,
+				B053FE0B0F979F696763FBB63A23A3A4 /* Images.xcassets in Resources */,
+				7E2318B6ED3359F0657DDBEF80249EC7 /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60448D9C2A7E500A7CBE2FB3F1295871 /* Resources */ = {
+		8D9CA445E3EE3B2CC70206048EE087C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81010DB0CD7BB2346B5BB8E3B719D2EF /* SAConfettiView.bundle in Resources */,
+				838A88AF28EC0A4B163D181247D214AD /* confetti.png in Resources */,
+				5C7282E8F57488046FFF77C1BAF64FB3 /* diamond.png in Resources */,
+				4363B7FF334DB4630D57ACF9CAA15B04 /* star.png in Resources */,
+				052FA9B7C932D28A410B9EE6842100CB /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E1744BF18439378D3F1AAB41777071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE419ED1F7FD1F2A0E80F59115700A78 /* SAConfettiView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		462E868D12BD7E6E8EC710B96F479AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F925682E6B942FC90300AD57CC4A3FA4 /* AsyncButton.swift in Sources */,
+				0F7918A80B45BD989E1517938847AF33 /* AsyncImageView.swift in Sources */,
+				70E60CACE96D048EEB929CF9F645262B /* AutoTextView.swift in Sources */,
+				9CC06A9B749AA7C189AC4BD35306D9ED /* BlurView.swift in Sources */,
+				F1C0CECE2E8D5BD331A075AC4AB3E524 /* DesignableButton.swift in Sources */,
+				21B28D48D9A9EFC2AF800FED324FCC79 /* DesignableImageView.swift in Sources */,
+				16C297C8AAC0AC2A471B37463A57AB6A /* DesignableLabel.swift in Sources */,
+				44E79D192EB66A3AC8EAC6EFF2095222 /* DesignableTabBarController.swift in Sources */,
+				532CF885ED473EA34646621697EFFE0F /* DesignableTextField.swift in Sources */,
+				ED9A12AF7528EA62D81F79F3217C7F66 /* DesignableTextView.swift in Sources */,
+				D1A247EB7317E28E1451F57C72FE5F17 /* DesignableView.swift in Sources */,
+				B4496F50FBB7FB0CB374EE18241DBE9D /* ImageLoader.swift in Sources */,
+				589A7F1DD86BA5CF842690C209487D3B /* KeyboardLayoutConstraint.swift in Sources */,
+				FD75FE0D486FF6D94B1EA6A2BA3FD64C /* LoadingView.swift in Sources */,
+				DC915957C864A837769F1629B9736B4E /* Misc.swift in Sources */,
+				3E530FEC4C77A1421B719CD7D78E35C1 /* SoundPlayer.swift in Sources */,
+				AF3F6AEEA4449588F5E300DF682EC413 /* Spring-dummy.m in Sources */,
+				62FEF5DE7F3AE3DF56989C3CD3BABE3E /* Spring.swift in Sources */,
+				55A90BC714B6DE67576573D3BCE1CD11 /* SpringAnimation.swift in Sources */,
+				86EDB8BCC6262582FBDBCD1DD7FC21BA /* SpringButton.swift in Sources */,
+				A906A56609111478167E00D9E004F49D /* SpringImageView.swift in Sources */,
+				EC2A53B8400BFE938E07F53D8904270B /* SpringLabel.swift in Sources */,
+				63C5E993E824D6C33C6BE02BA0E7E6D6 /* SpringTextField.swift in Sources */,
+				E0CC0B2772F71793C404DB704BDC36B3 /* SpringTextView.swift in Sources */,
+				33D768BBC6F0B1BCC1BAE9A4F0E95089 /* SpringView.swift in Sources */,
+				17B488BBE9254CADA9377AC687E883F1 /* TransitionManager.swift in Sources */,
+				8455039980EC369634ADE91F62912B2E /* TransitionZoom.swift in Sources */,
+				D93F7838C3914B255DE51DAD8152CF82 /* UnwindSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5D175E3568AC589E3CD530313379EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E86C99B783AAA13054E6A49716ED28B /* Pods-tictactoe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ABB01C4BB99D73D4B8201A702BADA98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87A32887D6422B9C3CD11E52B92F0497 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F8341CCD4EDD87239523A972E3C39169 /* Pods-tictactoeUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E6434007B1BE40B046DE48BD2387970 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,41 +720,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2AD18A01FC524655B0FBFF561DD917 /* Sources */ = {
+		A3865E3F95F6C4D5D57DA6CB4CC120E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32C5EF890E4D527B999A66427576D8DB /* SAConfettiView-dummy.m in Sources */,
-				96054ADF0F2AA70E28C0371AD669F66A /* SAConfettiView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB5F063716582C47139724573F2724E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				838D59C7FD14AE2E1A101561F48DC9CB /* Pods-tictactoe-dummy.m in Sources */,
+				2F324F66D2700A5C6BBE31D78A2B1701 /* SAConfettiView-dummy.m in Sources */,
+				AE361397196D1340B1A4E51441D79DBB /* SAConfettiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		533898D8A3C9D162290C5ACB1E1F9787 /* PBXTargetDependency */ = {
+		6C8840D0340FAAA970D2DF5084C97071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = 33DAB88F2F0DADA0952C1F867CFACF16 /* Spring */;
+			targetProxy = E5976B6E5BBCE5D6220BF75FFB7C6903 /* PBXContainerItemProxy */;
+		};
+		7E654F8EC2CAFE754042D172D7C3089E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SAConfettiView;
-			target = 92E182A105AFE227820A9C3285AEC8FE /* SAConfettiView */;
-			targetProxy = D6F598DD7D296C3B8C3AC74CC5EA7229 /* PBXContainerItemProxy */;
+			target = 67829BA31BA2B1C617AC9ECA315EEDC1 /* SAConfettiView */;
+			targetProxy = 8EAB71ACB1F3FB0816701B4A7FF3002C /* PBXContainerItemProxy */;
 		};
-		DF78719FC272C4FAEAC390BBF2523634 /* PBXTargetDependency */ = {
+		D25C0C5D3113E7B64AFBAF1075F8E82A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SAConfettiView-SAConfettiView";
-			target = DF39C84F89D96BD0F8D5241A3616ADE3 /* SAConfettiView-SAConfettiView */;
-			targetProxy = 037BD01EBAFC1C9C2D1CA711629A8849 /* PBXContainerItemProxy */;
+			target = 86D9D6A863624638F3C81F7819A6E760 /* SAConfettiView-SAConfettiView */;
+			targetProxy = 2B90E4EDDCDAB7C26DE7BDE5787936C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		10BB5267EBB4031A6C76A79B726E3A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673129F11DE4C7E101D820474058139B /* Spring.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1EA72CF266D37FA82E66AA8EDC9EBCF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09E43DC53BCD4CFBCD01B7372397A0A2 /* Pods-tictactoeTests.release.xcconfig */;
@@ -565,100 +818,23 @@
 			};
 			name = Release;
 		};
-		36BE1076110EDE9F1247BCED356D1309 /* Debug */ = {
+		574FAC026B29D23182F0DCC93DDFB170 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE844EE9E16DD07CE307E329DC3992F6 /* SAConfettiView.xcconfig */;
+			baseConfigurationReference = D7AE15FF2066316B810391E6F712F92A /* SAConfettiView.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAConfettiView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SAConfettiView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
-		};
-		391C6A6B3579609AA7FA07C00888B596 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE844EE9E16DD07CE307E329DC3992F6 /* SAConfettiView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAConfettiView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SAConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		40D9E9CFA6B97885A4FF214C682B25F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3305FF3742850F1B6133C725CF70FDB4 /* Pods-tictactoe.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-tictactoe/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-tictactoe/Pods-tictactoe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_tictactoe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		5B4E834DA46C0BBC89EBDC75DBF8474F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -728,6 +904,123 @@
 			};
 			name = Debug;
 		};
+		67110099AA7A269F1C9CA0BEF456E8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7AE15FF2066316B810391E6F712F92A /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6A980F1053252CA54991C352F9DC2BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7AE15FF2066316B810391E6F712F92A /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		719FFDCC4DC9F3037BC6B9CA6376657F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B356E223C83C7F85F4F1D94733530D60 /* Pods-tictactoe.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-tictactoe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tictactoe/Pods-tictactoe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_tictactoe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77350F5D0D898570E51F5365E56CE478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3305FF3742850F1B6133C725CF70FDB4 /* Pods-tictactoe.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-tictactoe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tictactoe/Pods-tictactoe.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_tictactoe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		84FD87D359382A37B07149A12641B965 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -770,21 +1063,33 @@
 			};
 			name = Debug;
 		};
-		8BA3E7A1394420D3328F5BA8E90224C0 /* Release */ = {
+		A04D82F48C06CC1FAF48BCDB8EEFCF6A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE844EE9E16DD07CE307E329DC3992F6 /* SAConfettiView.xcconfig */;
+			baseConfigurationReference = 673129F11DE4C7E101D820474058139B /* Spring.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SAConfettiView;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spring;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -822,9 +1127,9 @@
 			};
 			name = Release;
 		};
-		C2BA542E367AC2019EAECF936116666B /* Debug */ = {
+		CBD5559A7457990BFEAC03BA7E578A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B356E223C83C7F85F4F1D94733530D60 /* Pods-tictactoe.debug.xcconfig */;
+			baseConfigurationReference = D7AE15FF2066316B810391E6F712F92A /* SAConfettiView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -835,18 +1140,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-tictactoe/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-tictactoe/Pods-tictactoe.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_tictactoe;
+				PRODUCT_NAME = SAConfettiView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -854,24 +1155,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C55F4F0A9F38560BB1EA894A656AD82A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE844EE9E16DD07CE307E329DC3992F6 /* SAConfettiView.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SAConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -925,15 +1208,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		382DB46D0E7F6C0093356E445EF7F5F9 /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C55F4F0A9F38560BB1EA894A656AD82A /* Debug */,
-				8BA3E7A1394420D3328F5BA8E90224C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6C25C9C344E80DBAAF0C2CBAB894D25D /* Build configuration list for PBXNativeTarget "Pods-tictactoeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -952,20 +1226,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79815F0F3AA1C4147FACB44A28606E78 /* Build configuration list for PBXNativeTarget "SAConfettiView" */ = {
+		9C12B8ACE824C0C95F81B2512D2B7CF1 /* Build configuration list for PBXNativeTarget "SAConfettiView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36BE1076110EDE9F1247BCED356D1309 /* Debug */,
-				391C6A6B3579609AA7FA07C00888B596 /* Release */,
+				CBD5559A7457990BFEAC03BA7E578A29 /* Debug */,
+				6A980F1053252CA54991C352F9DC2BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BB560D6B6976FF42097273FD4634901 /* Build configuration list for PBXNativeTarget "Pods-tictactoe" */ = {
+		DB8545C4B2F6B45C5E0E88FA7B14100E /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2BA542E367AC2019EAECF936116666B /* Debug */,
-				40D9E9CFA6B97885A4FF214C682B25F2 /* Release */,
+				574FAC026B29D23182F0DCC93DDFB170 /* Debug */,
+				67110099AA7A269F1C9CA0BEF456E8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC03D39244FF01DD5B96E906770DB3F /* Build configuration list for PBXNativeTarget "Spring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10BB5267EBB4031A6C76A79B726E3A6D /* Debug */,
+				A04D82F48C06CC1FAF48BCDB8EEFCF6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1534A9AA312B0EE17D8B2C84712D65C /* Build configuration list for PBXNativeTarget "Pods-tictactoe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719FFDCC4DC9F3037BC6B9CA6376657F /* Debug */,
+				77350F5D0D898570E51F5365E56CE478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

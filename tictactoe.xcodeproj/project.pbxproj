@@ -587,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53E7B6A915EF2F0E2EC3F2D0 /* Pods-tictactoe.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = MLFV6FC582;
@@ -602,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 352A8BA6F0809BCA2181FBBD /* Pods-tictactoe.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = MLFV6FC582;

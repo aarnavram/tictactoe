@@ -1,22 +1,31 @@
 PODS:
   - SAConfettiView (0.1.8)
+  - Spring (1.0.3)
 
 DEPENDENCIES:
   - SAConfettiView (from `https://github.com/gokhanakkurt/SAConfettiView`, branch `swift3`)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
   SAConfettiView:
     :branch: swift3
     :git: https://github.com/gokhanakkurt/SAConfettiView
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
 
 CHECKOUT OPTIONS:
   SAConfettiView:
     :commit: ad562197a289cd2ce231effabe705fb6e00fadec
     :git: https://github.com/gokhanakkurt/SAConfettiView
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: f29826e4309b836b81dd3f07d314d9007fbbbbff
+PODFILE CHECKSUM: be2b43c1ad05024466a8835e28b07bdf27c899f2
 
 COCOAPODS: 1.0.1

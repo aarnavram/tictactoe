@@ -28,5 +28,6 @@ target 'tictactoe' do
   end
   
   pod 'SAConfettiView', :git => 'https://github.com/gokhanakkurt/SAConfettiView', :branch => 'swift3'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 
 end
