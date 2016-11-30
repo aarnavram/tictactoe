@@ -28,14 +28,7 @@ class ViewController: UIViewController {
     var player1score = 0
     var player2score = 0
     var confettiView = SAConfettiView(frame: UIScreen.main.bounds)
-    
-//    // Set colors (default colors are red, green and blue)
-//    var colorArray = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
-//    UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
-//    UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
-//    UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
-//    UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
-    
+
     
     @IBOutlet weak var player2Label: UILabel!
     @IBOutlet weak var player1Label: UILabel!
@@ -70,6 +63,15 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func onResetPressed(_ sender: AnyObject) {
+        
+        newRound()
+        player1score = 0
+        player2score = 0
+        player1Label.text = "Player 1 : \(player1score)"
+        player2Label.text = "Player 2 : \(player2score)"
+        
     }
     
     @IBAction func onButtonPressed(sender: UIButton) {
@@ -361,9 +363,9 @@ class ViewController: UIViewController {
     
     func animateButtonsOnWin(btnOne: UIButton, btnTwo: UIButton, btnThree: UIButton) {
         UIView.animate(withDuration: 0.3 , animations: {
-            btnOne.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
-            btnTwo.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
-            btnThree.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+            btnOne.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
+            btnTwo.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
+            btnThree.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
             
         }, completion: { finish in
             UIView.animate(withDuration: 1){

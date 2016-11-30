@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -196,7 +197,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcw-nA-ZOY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1 : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcw-nA-ZOY">
+                                <frame key="frameInset" minX="25" minY="113" width="324" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="324" id="WnZ-jb-VlG"/>
                                     <constraint firstAttribute="height" constant="44" id="xIZ-Fx-utY"/>
@@ -205,16 +207,31 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVb-gD-7bK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="jiN-1l-rZX"/>
+                                    <constraint firstAttribute="width" constant="59" id="oWM-cf-OiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onResetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4i-8O-Bec"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.17341033755335339" green="0.39299260230365829" blue="0.85234302184620847" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tPh-Cg-xYh" firstAttribute="centerX" secondItem="hQm-CH-Ev6" secondAttribute="centerX" id="6dM-L7-EFf"/>
                             <constraint firstItem="lcw-nA-ZOY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8vE-dQ-ILS"/>
+                            <constraint firstItem="IVb-gD-7bK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="A3J-Jp-tcp"/>
+                            <constraint firstItem="IVb-gD-7bK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="B7Q-JM-Btd"/>
                             <constraint firstItem="tPh-Cg-xYh" firstAttribute="centerY" secondItem="hQm-CH-Ev6" secondAttribute="centerY" id="VBc-00-MSz"/>
+                            <constraint firstItem="Rae-bK-esb" firstAttribute="top" secondItem="hQm-CH-Ev6" secondAttribute="bottom" constant="39.5" id="Voj-oB-A6y"/>
                             <constraint firstItem="Rae-bK-esb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y9p-up-srs"/>
-                            <constraint firstItem="hQm-CH-Ev6" firstAttribute="top" secondItem="lcw-nA-ZOY" secondAttribute="bottom" constant="30" id="Ym4-HQ-6MA"/>
+                            <constraint firstItem="hQm-CH-Ev6" firstAttribute="top" secondItem="lcw-nA-ZOY" secondAttribute="bottom" constant="39" id="dIp-dg-WkX"/>
                             <constraint firstItem="B6G-F1-Sle" firstAttribute="centerY" secondItem="hQm-CH-Ev6" secondAttribute="centerY" id="dSI-TM-Kch"/>
-                            <constraint firstItem="Rae-bK-esb" firstAttribute="top" secondItem="B6G-F1-Sle" secondAttribute="bottom" constant="30" id="ha2-7Y-yVe"/>
                             <constraint firstItem="B6G-F1-Sle" firstAttribute="centerX" secondItem="hQm-CH-Ev6" secondAttribute="centerX" id="nLS-aC-Lme"/>
                             <constraint firstItem="hQm-CH-Ev6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pye-5X-mXh"/>
                             <constraint firstItem="hQm-CH-Ev6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yT3-rL-irQ"/>
@@ -240,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="367"/>
+            <point key="canvasLocation" x="300" y="366.56671664167919"/>
         </scene>
     </scenes>
 </document>

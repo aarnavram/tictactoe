@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		25684B78CCB1CF08CD0293CC /* Pods_tictactoeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10CA68638D76528B3D57DBA /* Pods_tictactoeUITests.framework */; };
 		A01982771D61CAD800448DE9 /* Amethyst.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A01982761D61CAD800448DE9 /* Amethyst.ttf */; };
+		A022C1B71DEE95900011B9B6 /* LCDM2B__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A022C1B61DEE95900011B9B6 /* LCDM2B__.TTF */; };
 		A022EFC01D611945000CABAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFBF1D611945000CABAC /* AppDelegate.swift */; };
 		A022EFC21D611945000CABAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022EFC11D611945000CABAC /* ViewController.swift */; };
 		A022EFC51D611945000CABAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022EFC31D611945000CABAC /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		57E28F2FAE41664925631D52 /* Pods_tictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9937650B087F6A1863FE99 /* Pods-tictactoeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tictactoeUITests/Pods-tictactoeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A01982761D61CAD800448DE9 /* Amethyst.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amethyst.ttf; sourceTree = "<group>"; };
+		A022C1B61DEE95900011B9B6 /* LCDM2B__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LCDM2B__.TTF; sourceTree = "<group>"; };
 		A022EFBC1D611945000CABAC /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A022EFBF1D611945000CABAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A022EFC11D611945000CABAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		A022EFBE1D611945000CABAC /* tictactoe */ = {
 			isa = PBXGroup;
 			children = (
+				A022C1B61DEE95900011B9B6 /* LCDM2B__.TTF */,
 				A01982761D61CAD800448DE9 /* Amethyst.ttf */,
 				A022EFBF1D611945000CABAC /* AppDelegate.swift */,
 				A022EFC11D611945000CABAC /* ViewController.swift */,
@@ -288,6 +291,7 @@
 			files = (
 				A022EFCA1D611945000CABAC /* LaunchScreen.storyboard in Resources */,
 				A022EFC71D611945000CABAC /* Assets.xcassets in Resources */,
+				A022C1B71DEE95900011B9B6 /* LCDM2B__.TTF in Resources */,
 				A022EFC51D611945000CABAC /* Main.storyboard in Resources */,
 				A01982771D61CAD800448DE9 /* Amethyst.ttf in Resources */,
 			);
